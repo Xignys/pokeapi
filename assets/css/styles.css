@@ -1,0 +1,32 @@
+.case {
+  box-sizing: border-box;
+  /*width: 1094px;*/
+  /*height: 684px;*/
+  left: 25%;
+  top: 174px;
+  background: #D91D2C;
+  border: 2px solid #000000;
+  border-radius: 36px;
+}
+
+#finder {
+  border-radius: 24px;
+  padding: 8px;
+  align-items: center;
+  background-color: #4E7375;
+  justify-self: flex-start;
+  width: 95%;
+}
+
+.pokcenter {
+  box-sizing: border-box;
+  background: #852B32;
+  border: 3px solid #412A2A;
+  border-radius: 14px;
+}
+
+#searcher {
+  border: none;
+  outline: none;
+}
+
