@@ -6,12 +6,15 @@ body{
 }
 input:focus {
     /*outline: none;*/
-    outline: 3px solid rgb(254,254,254);
+    outline: 3px solid rgb(255,255,255);
     margin-right:0px;
 }
 input:focus::-webkit-input-placeholder 
 {
     color: transparent;
+}
+button{
+    box-shadow: none;
 }
 /*CLASES*/
 .container{
@@ -45,7 +48,7 @@ input:focus::-webkit-input-placeholder
 #NombrePokemon{
     background: #4e7375;
     border-style: solid;
-    border-color: rgb(254,254,254);
+    border-color: rgb(255,255,255);
     border-radius: 17px;
     box-shadow: inset 0px 0px 10px #000;
     margin: 1rem;
