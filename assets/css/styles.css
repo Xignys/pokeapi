@@ -1,3 +1,13 @@
+body{
+    /*background: url(&quot;assets/img/pokall.png&quot;) top / auto, #ffffff;*/
+    background: url("/assets/img/pokall.png") top / auto, #ffffff;
+}
+
 .container{
-    background: url(&quot;assets/img/pokall.png&quot;) top / auto, #ffffff;
+    background: #d91d2c;border-style: solid;font-family: 'Press Start 2P', serif;border-radius: 36px;
+    padding: 80px;
+    
+    margin: auto;
+    margin-top: 20px;
+    width: 1000px;
 }
