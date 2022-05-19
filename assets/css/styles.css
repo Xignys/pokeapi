@@ -113,13 +113,17 @@ input:focus::-webkit-input-placeholder
     color: #73fe1e;
     border: 0;
 }
-#infoPokemon{
+#CajainfoPokemon{
     background: #4e7375;
     border-style: solid;
     border-color: rgb(255,255,255);
     border-radius: 17px;
     box-shadow: inset 0px 0px 18px;
     margin: 1rem;
+}
+#infoPokemon{
+    margin-top: 1rem;
+    margin-left: 5px;
 }
 /*MEDIAS QUERIES*/
 @media screen and (min-width:780px) and (max-width:1024px) {
