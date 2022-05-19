@@ -14,7 +14,9 @@ input:focus::-webkit-input-placeholder
     color: transparent;
 }
 button{
+    border: 0;
     box-shadow: none;
+    background: none;
 }
 /*CLASES*/
 .container{
@@ -35,10 +37,13 @@ button{
     grid-template-columns: repeat(2, auto);
     grid-column-gap: 8px;
 }
+.cajaDerecha{
+    margin-top: 30px;
+}
 
 /*ID*/
 #centro{
-    width: 80px;
+    width: 130px;
     border-radius: 14px;
     border-width: 3px;
     border-style: solid;
@@ -128,6 +133,7 @@ button{
     margin-top: 1rem;
     margin-left: 5px;
 }
+
 /*MEDIAS QUERIES*/
 @media screen and (min-width:780px) and (max-width:1024px) {
     /*width: 100%;*/
