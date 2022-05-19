@@ -1,67 +1,69 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>pokeapi</title>
+    <!--ESTILOS CSS-->
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Press+Start+2P&amp;display=swap">
     <link rel="stylesheet" href="assets/css/styles.css">
+    <!--FUENTES-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Press+Start+2P&amp;display=swap">
+    <script src="https://kit.fontawesome.com/b4fabc8fc9.js" crossorigin="anonymous"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
 </head>
 
 <body>
     <div class="container">
-        <div class="row">
-            <div class="col">
-                <div class="row">
-                    <div class="col-xl-12 offset-xl-0 text-nowrap"><img src="assets/img/bluebtn.png"><img src="assets/img/btns.png"></div>
-                </div>
-                <div class="row">
-                    <div class="col"><img src="assets/img/frame%201.png"></div>
-                </div>
-                <div class="row">
-                    <div class="col text-nowrap fs-4 text-center nombrepokemon" style="background: #4e7375;border-style: solid;border-color: rgb(254,254,254);border-radius: 17px;box-shadow: inset 0px 0px 10px;margin: 1rem;">
-                        <p class="text-nowrap" style="margin-top: 1rem;">Paragraph</p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col d-xxl-flex justify-content-xxl-center poke-img" style="border-radius: 17px;border: 5px solid rgb(255,255,255);background: #4E7375;box-shadow: inset 0px 0px 18px;margin: 1rem;"><img src="assets/img/imgpoke.png"></div>
-                </div>
-                <div class="row">
-                    <div class="col-xxl-3" style="background: #4e7375;border-radius: 17px;border-style: solid;border-color: rgb(255,255,255);box-shadow: inset 0px 0px 10px 2px;margin: 1rem;">
-                        <p id="numpoke" style="text-align: center;font-size: 16px;margin-top: 1rem;">01</p>
-                    </div>
-                    <div class="col text-center" style="margin: 1rem;background: #4e7375;border-style: solid;border-color: rgb(255,255,255);border-radius: 17px;box-shadow: inset 0px 0px 18px;">
-                        <p id="tipopoke" style="margin-top: 1rem;">tipo</p>
-                    </div>
-                </div>
-                <div class="row"></div>
+        <div class="cajaIZQ">
+            <div class="col-xl-12 offset-xl-0 text-nowrap"><img src="assets/img/bluebtn.png"><img src="assets/img/btns.png"></div>
+            <div class="col"><img src="assets/img/frame%201.png"></div>
+            <div id="NombrePokemon" class="col text-nowrap fs-4 text-center nombrepokemon">
+                <p id="Nombre" class="text-nowrap">IdNombre</p>
             </div>
-            <div class="col-xl-1" style="border-radius: 14px;border-width: 3px;border-style: solid;background: #852B32;"></div>
-            <div class="col">
-                <div class="row">
-                    <div class="col d-xxl-flex justify-content-xxl-center" style="background: #4e7375;border-style: solid;border-color: rgb(248,249,249);box-shadow: inset 0px 0px 10px;border-radius: 17px;margin: 1rem;margin-top: 2rem;width: 570.25px;"><input type="search" style="background: rgba(255,255,255,0);border-style: none;padding: 5px;width: 570.25px;height: 50px;border-radius: 17px;"></div>
-                </div>
-                <div class="row">
-                    <div class="col"><img src="assets/img/frame%202.png"></div>
-                </div>
-                <div class="row">
-                    <div class="col text-center" style="background: #4e7375;border-style: solid;border-color: rgb(255,255,255);border-radius: 17px;box-shadow: inset 0px 0px 18px;margin: 1rem;">
-                        <p class="text-start" style="margin-top: 1rem;margin-left: 5px;">Paragraph</p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col text-center"><img src="assets/img/blueButtons.png"></div>
-                </div>
-                <div class="row">
-                    <div class="col text-center"><img id="botonizq" src="assets/img/leftbtn.png"><img id="botoncent" src="assets/img/ctrbtn.png"><img id="botonder" src="assets/img/rightbtn.png"></div>
-                </div>
-                <div class="row"></div>
+
+            <div id="ImagenPokemon" class="col d-xxl-flex justify-content-xxl-center poke-img">
+                IdImagenPokemon
             </div>
+
+            <div class="gridx2">
+                <div id="CajaNumPoke"class="col-xxl-3">
+                    <p id="numPoke">01</p>
+                </div>
+    
+                <div id="CajaTipoPoke" class="col text-center">
+                    <p id="tipoPoke">tipo</p>
+                </div>    
+            </div>
+            
+
         </div>
+
+        <div class="col-xxl-1" id="centro"></div>
+        
+
+        <div class="cajaDerecha">
+            
+            <div id="CajaBuscar" class="col d-xxl-flex justify-content-xxl-center"><!--class="col d-xxl-flex justify-content-xxl-center"-->
+                <input id="BuscarPoke" type="search" placeholder=" &#xf002; Buscar Pokemon">
+            </div>
+
+            <div class="col"><img src="assets/img/frame%202.png"></div>
+
+            <div id="infoPokemon" class="col text-center">
+                <p class="text-start" style="margin-top: 1rem;margin-left: 5px;">Paragraph</p>
+            </div>
+
+            <div class="col text-center"><img src="assets/img/blueButtons.png"></div>
+
+            <div class="row">
+                <div class="col text-center"><img id="botonizq" src="assets/img/leftbtn.png"><img id="botoncent" src="assets/img/ctrbtn.png"><img id="botonder" src="assets/img/rightbtn.png"></div>
+            </div>
     </div>
+    <!--JAVASCRIPT-->
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    
 </body>
 
 </html>
